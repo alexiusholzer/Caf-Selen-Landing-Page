@@ -47,10 +47,17 @@ export const About = () => {
           >
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-warm">
               <img 
-                src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" 
+                src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400&h=500"
+                srcSet="
+                  https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400&h=500 400w,
+                  https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600&h=750 600w,
+                  https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000 800w
+                "
+                sizes="(max-width: 768px) 100vw, 50vw"
                 alt="Café Selen Innenraum" 
                 className="w-full h-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </motion.div>

@@ -26,27 +26,33 @@ export const Gallery = () => {
 
   const galleryImages = [
     {
-      url: "https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+      url: "https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=400&h=320",
+      srcSet: "https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=400&h=320 400w, https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=600&h=480 600w",
       alt: "Barista beim Zubereiten von Latte Art",
     },
     {
-      url: "https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+      url: "https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=400&h=320",
+      srcSet: "https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=400&h=320 400w, https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=600&h=480 600w",
       alt: "Auslage frischer Backwaren",
     },
     {
-      url: "https://images.pexels.com/photos/2103949/pexels-photo-2103949.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+      url: "https://images.pexels.com/photos/2103949/pexels-photo-2103949.jpeg?auto=compress&cs=tinysrgb&w=400&h=320",
+      srcSet: "https://images.pexels.com/photos/2103949/pexels-photo-2103949.jpeg?auto=compress&cs=tinysrgb&w=400&h=320 400w, https://images.pexels.com/photos/2103949/pexels-photo-2103949.jpeg?auto=compress&cs=tinysrgb&w=600&h=480 600w",
       alt: "Kaffeebohnen Nahaufnahme",
     },
     {
-      url: "https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+      url: "https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=400&h=320",
+      srcSet: "https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=400&h=320 400w, https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=600&h=480 600w",
       alt: "Café-Terrasse mit Gästen",
     },
     {
-      url: "https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+      url: "https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&cs=tinysrgb&w=400&h=320",
+      srcSet: "https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&cs=tinysrgb&w=400&h=320 400w, https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&cs=tinysrgb&w=600&h=480 600w",
       alt: "Handwerkliche Kaffeezubereitung",
     },
     {
-      url: "https://images.pexels.com/photos/230477/pexels-photo-230477.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+      url: "https://images.pexels.com/photos/230477/pexels-photo-230477.jpeg?auto=compress&cs=tinysrgb&w=400&h=320",
+      srcSet: "https://images.pexels.com/photos/230477/pexels-photo-230477.jpeg?auto=compress&cs=tinysrgb&w=400&h=320 400w, https://images.pexels.com/photos/230477/pexels-photo-230477.jpeg?auto=compress&cs=tinysrgb&w=600&h=480 600w",
       alt: "Gemütliches Café-Interieur mit Büchern",
     },
   ];
@@ -90,9 +96,12 @@ export const Gallery = () => {
             >
               <img 
                 src={image.url} 
+                srcSet={image.srcSet}
+                sizes="(max-width: 768px) 50vw, 33vw"
                 alt={image.alt}
                 className="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
                 <p className="text-white text-sm md:text-base font-medium">{image.alt}</p>

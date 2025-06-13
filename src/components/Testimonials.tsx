@@ -40,7 +40,7 @@ export const Testimonials = () => {
       id="testimonials" 
       className="section bg-primary-700 text-white"
       style={{
-        backgroundImage: "linear-gradient(rgba(111, 69, 24, 0.9), rgba(111, 69, 24, 0.9)), url('https://images.pexels.com/photos/6205523/pexels-photo-6205523.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080')",
+        backgroundImage: "linear-gradient(rgba(111, 69, 24, 0.9), rgba(111, 69, 24, 0.9)), url('https://images.pexels.com/photos/6205523/pexels-photo-6205523.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -84,6 +84,7 @@ export const Testimonials = () => {
                   alt={testimonial.name}
                   className="w-14 h-14 rounded-full object-cover mr-4"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div>
                   <h4 className="font-semibold text-lg">{testimonial.name}</h4>

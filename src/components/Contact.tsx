@@ -49,7 +49,7 @@ export const Contact = () => {
       id="contact" 
       className="section bg-cream-100"
       style={{
-        backgroundImage: "url('https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080')",
+        backgroundImage: "url('https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
