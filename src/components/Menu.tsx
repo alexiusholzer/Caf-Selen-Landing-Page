@@ -58,8 +58,6 @@ export const Menu = () => {
     <section 
       id="menu" 
       className="section bg-white"
-      style={{
-      className="section bg-white"
     >
       <div className="container-custom" ref={ref}>
         <div className="bg-white/90 rounded-2xl shadow-warm p-8 md:p-12 backdrop-blur-sm">
