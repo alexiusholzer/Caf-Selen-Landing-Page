@@ -59,7 +59,9 @@ export const Menu = () => {
       id="menu" 
       className="section bg-white"
       style={{
-        backgroundImage: "url('https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')",
+        backgroundImage: 
+          https://www.bing.com/images/search?view=detailV2&ccid=o%2fmZiFuh&id=9777A31E806E8C98436B5BAE1A4C992E5B3FEE27&thid=OIP.o_mZiFuhK4v2Y0c2enDVdAHaLG&mediaurl=https%3a%2f%2fcafeselen.de%2fwp-content%2fuploads%2f2025%2f01%2fcafe-selen_kaiserslautern-innenstadt_cafe-aussen_historisch-architektur_1_1000px.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.a3f999885ba12b8bf66347367a70d574%3frik%3dJ%252b4%252fWy6ZTBquWw%26pid%3dImgRaw%26r%3d0&exph=1000&expw=667&q=cafe+selen+kaiserslautern+maps+google&simid=608015886776488071&FORM=IRPRST&ck=ABB3F5A63D0C54618093D5F1C22EA760&selectedIndex=0&itb=0&ajaxhist=0&ajaxserp=0
+        
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
