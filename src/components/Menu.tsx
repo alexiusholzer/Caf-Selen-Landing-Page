@@ -59,7 +59,7 @@ export const Menu = () => {
       id="menu" 
       className="section bg-white"
       style={{
-        backgroundImage: "url('https://images.pexels.com/photos/1833399/pexels-photo-1833399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')",
+        backgroundImage: "url('https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
